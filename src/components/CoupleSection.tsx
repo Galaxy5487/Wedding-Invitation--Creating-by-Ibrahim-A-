@@ -11,7 +11,7 @@ export const CoupleSection: React.FC = () => {
       <div className="absolute bottom-1/4 left-0 w-[400px] h-[400px] bg-sage/10 rounded-full filter blur-[100px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto relative z-10">
-        
+
         {/* Section Header */}
         <div className="text-center mb-16 md:mb-24">
           <span className="text-xs tracking-[0.3em] uppercase text-dusty-rose-dark font-semibold">Introducing the Couple</span>
@@ -27,29 +27,31 @@ export const CoupleSection: React.FC = () => {
 
         {/* Couple Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
-          
+
           {/* Groom Card */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col md:flex-row items-center gap-8 p-6 md:p-8 rounded-3xl liquid-glass border border-white/60 shadow-lg group hover:shadow-xl transition-all duration-500"
           >
-            {/* Groom Portrait Frame */}
-            <div className="relative w-56 h-72 sm:w-64 sm:h-80 md:w-56 md:h-72 lg:w-60 lg:h-80 shrink-0 rounded-2xl overflow-hidden shadow-md border-4 border-white/80 botanical-frame bg-pearl-dark">
-              {/* Overlay with subtle gold shimmer */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent z-10" />
-              {/* Placeholder/Replaceable Portrait Image */}
-              <img 
-                src="/images/couple_detail.jpg" 
-                alt="Groom Mohammed Fardeen" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out filter brightness-[0.98]"
-                loading="lazy"
-              />
-              <div className="absolute bottom-4 left-4 z-20 text-white font-cinzel text-lg tracking-wider">
-                THE GROOM
+            {/* Groom Avatar Frame */}
+            <div className="relative shrink-0 flex flex-col items-center">
+              <div className="relative w-44 h-44 sm:w-52 sm:h-52 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full p-1.5 bg-gradient-to-tr from-warm-gold/60 via-dusty-rose/40 to-warm-gold/60 shadow-xl group-hover:scale-105 transition-transform duration-500">
+                <div className="w-full h-full rounded-full overflow-hidden border-2 border-white bg-pearl-ivory shadow-inner relative">
+                  <img
+                    src="/images/groom_avatar.png"
+                    alt="Groom Mohammed Fardeen Avatar"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                    loading="lazy"
+                  />
+                </div>
               </div>
+              {/* Avatar Label Badge */}
+              <span className="mt-3 px-4 py-1 rounded-full bg-botanical-green/90 text-pearl-ivory font-cinzel text-xs tracking-widest uppercase shadow-sm border border-warm-gold/30">
+                THE GROOM
+              </span>
             </div>
 
             {/* Groom Details */}
@@ -58,7 +60,7 @@ export const CoupleSection: React.FC = () => {
                 {weddingData.groomName}
               </h3>
               <span className="text-xs uppercase tracking-[0.2em] text-warm-gold-dark font-semibold mt-1 mb-4">
-                Son of Mr. &amp; Mrs. Family Name
+
               </span>
               <p className="text-sm text-deep-olive/80 leading-relaxed font-sans font-light">
                 {weddingData.groomBio}
@@ -75,27 +77,29 @@ export const CoupleSection: React.FC = () => {
           </motion.div>
 
           {/* Bride Card */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col md:flex-row-reverse items-center gap-8 p-6 md:p-8 rounded-3xl liquid-glass border border-white/60 shadow-lg group hover:shadow-xl transition-all duration-500"
           >
-            {/* Bride Portrait Frame */}
-            <div className="relative w-56 h-72 sm:w-64 sm:h-80 md:w-56 md:h-72 lg:w-60 lg:h-80 shrink-0 rounded-2xl overflow-hidden shadow-md border-4 border-white/80 botanical-frame bg-pearl-dark">
-              {/* Overlay with subtle gold shimmer */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent z-10" />
-              {/* Placeholder/Replaceable Portrait Image */}
-              <img 
-                src="/images/botanical_detail.jpg" 
-                alt="Bride Shagufa Anjum" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out filter brightness-[0.98]"
-                loading="lazy"
-              />
-              <div className="absolute bottom-4 left-4 z-20 text-white font-cinzel text-lg tracking-wider">
-                THE BRIDE
+            {/* Bride Avatar Frame */}
+            <div className="relative shrink-0 flex flex-col items-center">
+              <div className="relative w-44 h-44 sm:w-52 sm:h-52 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full p-1.5 bg-gradient-to-tr from-warm-gold/60 via-dusty-rose/40 to-warm-gold/60 shadow-xl group-hover:scale-105 transition-transform duration-500">
+                <div className="w-full h-full rounded-full overflow-hidden border-2 border-white bg-pearl-ivory shadow-inner relative">
+                  <img
+                    src="/images/bride_avatar.png"
+                    alt="Bride Shagufa Anjum Avatar"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                    loading="lazy"
+                  />
+                </div>
               </div>
+              {/* Avatar Label Badge */}
+              <span className="mt-3 px-4 py-1 rounded-full bg-botanical-green/90 text-pearl-ivory font-cinzel text-xs tracking-widest uppercase shadow-sm border border-warm-gold/30">
+                THE BRIDE
+              </span>
             </div>
 
             {/* Bride Details */}
@@ -104,7 +108,7 @@ export const CoupleSection: React.FC = () => {
                 {weddingData.brideName}
               </h3>
               <span className="text-xs uppercase tracking-[0.2em] text-warm-gold-dark font-semibold mt-1 mb-4">
-                Daughter of Mr. &amp; Mrs. Family Name
+
               </span>
               <p className="text-sm text-deep-olive/80 leading-relaxed font-sans font-light">
                 {weddingData.brideBio}
