@@ -10,7 +10,6 @@ import BismillahSection from './components/BismillahSection';
 import CoupleSection from './components/CoupleSection';
 import CountdownSection from './components/CountdownSection';
 import EventsSection from './components/EventsSection';
-import GallerySection from './components/GallerySection';
 import LoveStorySection from './components/LoveStorySection';
 import LocationSection from './components/LocationSection';
 import RSVPSection from './components/RSVPSection';
@@ -61,9 +60,6 @@ export const App: React.FC = () => {
 
         {/* Event Timeline (Nikah & Walima) */}
         <EventsSection />
-
-        {/* Cinematic Masonry Gallery with Lightbox */}
-        <GallerySection />
 
         {/* Love Story Segment */}
         <LoveStorySection />
