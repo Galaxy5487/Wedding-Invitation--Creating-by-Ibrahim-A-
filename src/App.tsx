@@ -10,7 +10,6 @@ import BismillahSection from './components/BismillahSection';
 import CoupleSection from './components/CoupleSection';
 import CountdownSection from './components/CountdownSection';
 import EventsSection from './components/EventsSection';
-import LoveStorySection from './components/LoveStorySection';
 import LocationSection from './components/LocationSection';
 import RSVPSection from './components/RSVPSection';
 import ShareSection from './components/ShareSection';
@@ -60,9 +59,6 @@ export const App: React.FC = () => {
 
         {/* Event Timeline (Nikah & Walima) */}
         <EventsSection />
-
-        {/* Love Story Segment */}
-        <LoveStorySection />
 
         {/* Interactive Google Venue Maps */}
         <LocationSection />
