@@ -103,7 +103,7 @@ export const weddingData: WeddingConfig = {
       address: "Noor Ahmad, First Street, Pernambut",
       description: "The sunnah feast of marriage, celebrated with gratitude, joy, and a warm gathering of family and friends to honor the newlywed couple.",
       googleMapsUrl: "https://maps.app.goo.gl/J6tFJZjWJDV52J4X8",
-      googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5245880182165!2d78.721021!3d12.9382485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad74cf618cedb9%3A0x6737ad0c68a72e0!2sNoor%20Ahmed%201st%20St%2C%20Tamil%20Nadu%20635810!5e0!3m2!1sen!2sin!4v1786959770063!5m2!1sen!2sin",
+      googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5245880182165!2d78.721021!3d12.9382485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad74cf618cedb9%3A0x6737ad0c68a72e0!2sNoor%20Ahmed%201st%20St%2C%20Tamil%20Nadu%20635810!5e0!3m2!1sen!2sin!4v1786963278432!5m2!1sen!2sin",
       icon: "walima",
       calendarTitle: "Walima: Mohammed Fardeen & Shagufa Anjum",
       calendarStart: "2026-09-10T20:30:00", // Approximate post-Isha time for calendar slot
